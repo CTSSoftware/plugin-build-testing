@@ -10,8 +10,10 @@ module.exports = function(ctx) {
 
     const platformRoot = path.join(ctx.opts.projectRoot, 'platforms/android');
     const apkCrosswalkFileLocation = path.join(platformRoot, 'app/build/outputs/apk/armv7/release/app-armv7-release.apk');
-    const apkReleasePath = path.join(platformRoot, 'app/build/outputs/apk/release');
+    //const apkReleasePath = path.join(platformRoot, 'app/build/outputs/apk/release');
+    const apkReleasePath = path.join(platformRoot, 'build/outputs/apk/release');
     const apkFileLocation = path.join(apkReleasePath, '/android-release.apk');
+
     fs.stat(apkCrosswalkFileLocation, function(err,stats) {
         if (err) {
             console.log('Post Build  - Stat Failure');
