@@ -1,6 +1,8 @@
 {
   "name": "plugin-build-testing",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "3ef1bae9"
 }
